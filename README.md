@@ -10,7 +10,7 @@
 
 ### 使用端： 使用的时候引入框架的jar包
 需要两个配置类文件：
-	1.sqlMapConfig.xml 用来存放数据库配置相关的信息
+	1.sqlMapConfig.xml 用来存放数据库配置相关的信息 <br/>
 	2.mapper.xml       用来存款sql配置信息
 
 
