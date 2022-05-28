@@ -1,0 +1,23 @@
+<mapper namespace="com.fizzli.dao.IUserDao">
+
+    <!--sql的唯一标识：namespace.id来组成，statement-->
+    <select id="findAll"  resultType="com.fizzli.pojo.User">
+        select * from user
+    </select>
+
+    <select id="findUserByCondition" parameterType="com.fizzli.pojo.User" resultType="com.fizzli.pojo.User">
+        select * from user where id=#{id} and username=#{username}
+    </select>
+
+    <insert id="addUser" parameterType="com.fizzli.pojo.User" resultType="java.lang.Integer">
+        insert into user(id,username,password,birthday) values(#{id},#{username},#{password},#{birthday})
+    </insert>
+
+    <delete id="delUserById" parameterType="com.fizzli.pojo.User" resultType="java.lang.Integer">
+        delete from user where id=#{id}
+    </delete>
+
+    <update id="updateUserById" parameterType="com.fizzli.pojo.User" resultType="java.lang.Integer">
+        update user set username=#{username},password=#{password},birthday=#{birthday} where id=#{id}
+    </update>
+</mapper>
