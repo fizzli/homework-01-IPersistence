@@ -1,5 +1,5 @@
 # homework-01-IPersistence
-自定义持久层框架及厕所代码
+自定义持久层框架及使用端测试代码
 
 ## 视频讲解地址：
   链接：https://pan.baidu.com/s/1tStFZWHMODqoHKc2OtZP1Q?pwd=lzqf 
